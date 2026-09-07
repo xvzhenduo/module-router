@@ -6,7 +6,7 @@ import tseslint from "typescript-eslint";
 
 export default defineConfig([
   {
-    ignores: ["node_modules", "__tests__"],
+    ignores: ["node_modules", "**/__tests__/**"],
   },
   tseslint.configs.recommendedTypeChecked,
   {

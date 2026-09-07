@@ -12,6 +12,7 @@
     "format:check": "prettier --check --cache .",
     "format:fix": "prettier --write --cache .",
     "typecheck": "tsc",
+    "test": "node --test \"**/__tests__/**/*.test.ts\"",
     "checkall": "npm run lint:check && npm run typecheck && npm run format:check",
     "fixall": "npm run typecheck && npm run lint:fix && npm run format:fix",
     "prepare": "husky"
@@ -39,5 +40,8 @@
     "prettier": "^3.9.6",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.69.0"
+  },
+  "dependencies": {
+    "zod": "^4.5.4"
   }
 }
